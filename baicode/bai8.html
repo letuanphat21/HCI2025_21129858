@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/font.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+
+        <header class="header">
+            <div class="logo"><a  style="text-decoration: none; color: white;" href="../baicode/dashboard.html">WebCode</a></div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm..." class="search-input">
+
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="Logo">
+                <a style="text-decoration: none; color: white;" href="../lab2.html">Sign out</a>
+             </div>
+        </header>
+
+        <div class="container">
+
+            <div class="describe">
+                <h2>String to Integer (atoi)</h2>
+                <p>Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
+
+                    The algorithm for myAtoi(string s) is as follows:
+
+                    Whitespace: Ignore any leading whitespace (" ").
+                    Signedness: Determine the sign by checking if the next character is '-' or '+', assuming positivity
+                    is neither present.
+                    Conversion: Read the integer by skipping leading zeros until a non-digit character is encountered or
+                    the end of the string is reached. If no digits were read, then the result is 0.
+                    Rounding: If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then round the
+                    integer to remain in the range. Specifically, integers less than -231 should be rounded to -231, and
+                    integers greater than 231 - 1 should be rounded to 231 - 1.
+                    Return the integer as the final result.
+
+
+                    <br>
+                    Example 1:<br>
+
+                    Input: s = "42"
+
+                    Output: 42
+
+                    Explanation:
+
+                    The underlined characters are what is read in and the caret is the current reader position.
+                    Step 1: "42" (no characters read because there is no leading whitespace)
+                    ^
+                    Step 2: "42" (no characters read because there is neither a '-' nor '+')
+                    ^
+                    Step 3: "42" ("42" is read in)<br>
+
+                    Example 2:<br>
+
+                    IInput: s = " -042"
+
+                    Output: -42
+
+                    Explanation:
+
+                    Step 1: " -042" (leading whitespace is read and ignored)
+                    ^
+                    Step 2: " -042" ('-' is read, so the result should be negative)
+                    ^
+                    Step 3: " -042" ("042" is read in, leading zeros ignored in the result)
+
+                </p>
+
+            </div>
+
+            <div class="button">
+                <button type="button" class="btn btn-primary">Run</button>
+                <a href="../ketquacode/ketqua8.html" style="text-decoration: none;"><button type="button" class="btn btn-success">Submit</button></a> 
+                <button type="button" class="btn btn-danger">Clear</button>
+                <button type="button" class="btn btn-info">Save</button>
+
+            </div>
+
+            <div class="code mt-2">
+                <div class="select">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose programming language </option>
+                        <option value="1">Java</option>
+                        <option value="2">C</option>
+                        <option value="3">C++</option>
+                        <option value="3">Python</option>
+                        <option value="3">JavaScript</option>
+                        <option value="3">C#</option>
+                    </select>
+                </div>
+                <div class="enterCode mt-2">
+                    <textarea style="border-radius: 5px;" id="myTextarea" placeholder="Enter code ..." rows="30"
+                        cols="159"></textarea>
+
+                </div>
+
+            </div>
+
+            <div>
+                <a href="dashboard.html"> <button type="button" class="btn btn-primary btn-lg">Back</button></a>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <footer class="py-3 my-4">
+            <hr>
+            <p class="text-center text-body-secondary">© 2024 Phát Lê</p>
+        </footer>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
