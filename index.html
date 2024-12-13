@@ -5,19 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Webpage with Menu</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index1.css">
     <link rel="stylesheet" href="css/font.css">
+    
+
     <style>
-      body {
-    background-image: url('https://img.thuthuatphanmem.vn/uploads/2018/10/04/hinh-nen-xe-3d-cho-may-tinh_111411842.jpg'); /* Đường dẫn tới ảnh */
-    background-size: cover; /* Hình nền phủ kín trang */
-    background-position: center center; /* Căn giữa hình nền */
-    background-repeat: no-repeat; /* Không lặp lại hình nền */
-    height: 100vh; /* Chiều cao toàn bộ trang */
-    margin: 0;
-    padding: 0;
-}
+        body {
+            background-color: #f8f9fa; /* Màu nền trang */
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .animated-content {
+            animation: fadeIn 2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* Tính từ chiều cao của header và footer */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -25,16 +42,23 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="labs.html">Labs</a></li>
             </ul>
         </nav>
     </header>
-   
-        <footer>
-            <p>&copy; Phát Lê</p>
-        </footer>
+
+    <main class="animated-content">
+        <div class="content text-center">
+            <h1>Welcome to My Website</h1>
+            <p>My name Lê Tuấn Phát  :))</p>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; Phát Lê</p>
+    </footer>
 </body>
 
 </html>

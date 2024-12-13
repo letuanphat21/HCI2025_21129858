@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
 }
 
 header {
@@ -31,19 +32,14 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-    background-color: #ccc
-}
-
-#home {
-    background-color: #f4f4f4;
-}
-
-#about {
-    background-color: #e2e2e2;
-}
-
-#labs {
+    text-decoration: underline;
     background-color: #ccc;
+    color: black;
+}
+nav ul.menu li a.active {
+    background-color: #ccc; /* Màu sắc khi liên kết đang hoạt động */
+    color: black;
+    text-decoration: underline;
 }
 
 footer {
