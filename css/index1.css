@@ -6,7 +6,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Màu nền trang */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -50,4 +55,20 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.animated-content {
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Tính từ chiều cao của header và footer */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
