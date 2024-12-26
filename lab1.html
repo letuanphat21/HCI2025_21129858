@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <ul class="menu">
+            <ul class="menu" style="margin: 0px 0px !important;  padding: 0px 0px !important;">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="labs.html" >Labs</a></li>
@@ -24,7 +24,7 @@
     </header>
     <header>
         <nav>
-            <ul class="menu">
+            <ul class="menu" style="margin: 0px 0px !important;  padding: 0px 0px !important;">
                 <li><a href="lab1.html" class="active">Lab1</a></li>
                 <li><a href="lab2.html">Lab2</a></li>
                 <li><a href="lab3.html">Lab3</a></li>
@@ -34,7 +34,12 @@
             </ul>
         </nav>
     </header>
-
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="labs.html">Labs</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lab1</li>
+        </ol>
+      </nav>
     <div class="container">
         <h1>Create Account</h1>
         <form id="accountForm">
